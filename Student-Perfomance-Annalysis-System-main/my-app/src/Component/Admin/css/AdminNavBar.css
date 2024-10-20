@@ -1,0 +1,125 @@
+/* CourseList.css */
+.navbar {
+    background-color: #e3f2fd; /* Light blue background color */
+    padding: 15px 0; /* Adjust padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    color: #000; /* Black text color */
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .navbar-toggler {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #000; /* Black hamburger icon */
+    width: 24px;
+    height: 2px;
+    display: block;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  .nav-item {
+    margin-left: 20px; /* Adjust spacing between items */
+  }
+  
+  .nav-item:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-link {
+    color: #000; /* Black text color */
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .dropdown-menu {
+    background-color: #343a40; /* Dark background color */
+  }
+  
+  .dropdown-item {
+    color: #fff; /* White text color */
+    text-decoration: none;
+  }
+  
+  .dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .dropdown-menu-dark {
+    background-color: #343a40; /* Dark background color */
+  }
+  
+  .dropdown-menu-dark .dropdown-item {
+    color: #fff; /* White text color */
+  }
+  
+  .dropdown-menu-dark .dropdown-item:hover {
+    background-color: #495057; /* Darker background color on hover */
+  }
+  
+  .dropdown-toggle::after {
+    display: none; /* Hide caret */
+  }
+  
+  .fa {
+    margin-right: 5px; /* Adjust margin */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #000; /* Black hamburger icon */
+    width: 24px;
+    height: 2px;
+    display: block;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      display: none;
+    }
+    
+    .navbar-toggler {
+      display: block;
+    }
+    
+    .collapse {
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 60px; /* Adjust top margin */
+      background-color: #e3f2fd; /* Light blue background color */
+      z-index: 1;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+    }
+    
+    .collapse.active {
+      display: block;
+    }
+    
+    .nav-item {
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 10px; /* Adjust margin */
+    }
+  }
+  

@@ -1,0 +1,45 @@
+/* StudentResult.css */
+
+.student-result-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .student-result-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .student-result-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .student-result-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .student-result-item p {
+    margin: 0;
+  }
+  
+  .quiz-id {
+    font-weight: bold;
+  }
+  
+  .marks {
+    font-style: italic;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+  

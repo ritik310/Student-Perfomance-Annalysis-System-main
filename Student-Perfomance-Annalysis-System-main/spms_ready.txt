@@ -1,0 +1,50 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS spms;
+USE spms;
+
+-- Table for Admin details
+CREATE TABLE IF NOT EXISTS Admin (
+    UserName VARCHAR(255) UNIQUE,
+    Password VARCHAR(255),
+    Email VARCHAR(255)
+);
+
+-- Table for Student details
+CREATE TABLE Student (
+    StudentId INT  PRIMARY KEY,
+    FirstName VARCHAR(255) NOT NULL,
+    MiddleName VARCHAR(255) NOT NULL,
+    LastName VARCHAR(255) NOT NULL,
+    Mobile VARCHAR(10) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    Sex VARCHAR(255) NOT NULL,
+    CourseId INT NOT NULL,
+    DOB VARCHAR(255) NOT NULL,
+    Batch INT NOT NULL,
+    Password VARCHAR(255)
+);
+
+
+-- Table for adding course
+CREATE TABLE `course` (
+  `CourseId` int NOT NULL,
+  `CourseName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`CourseId`)
+) 
+CREATE TABLE `subject` (
+  `SrNo` int NOT NULL AUTO_INCREMENT,
+  `SubjectId` int NOT NULL,
+  `SubjectName` varchar(255) NOT NULL,
+  `CourseId` int DEFAULT NULL,
+  `CourseName` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`SrNo`),
+  UNIQUE KEY `SubjectId` (`SubjectId`),
+  KEY `CourseId` (`CourseId`),
+  CONSTRAINT `subject_ibfk_1` FOREIGN KEY (`CourseId`) REFERENCES `course` (`CourseId`)
+)
+
+INSERT INTO Student 
+VALUES 
+    (1001,'John', 'Doe', 'Smith', '1234567890', 'john@example.com', '2000-01-01'),
+    (1002,'Jane', 'Doe', 'Smith', '9876543210', 'jane@example.com', '2001-02-02'),
+    (1003,'Alice', 'John', 'Johnson', '5555555555', 'alice@example.com', '1999-03-03');

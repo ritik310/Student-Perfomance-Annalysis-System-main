@@ -1,0 +1,98 @@
+.create-question-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .create-question-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .create-question-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .create-question-container input[type="text"],
+  .create-question-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .create-question-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-question-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Styles for the success popup */
+.success-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #dff0d8; /* Light green */
+    padding: 20px;
+    border: 2px solid #d6e9c6; /* Dark green */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styles for the error popup */
+  .error-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2dede; /* Light red */
+    padding: 20px;
+    border: 2px solid #ebccd1; /* Dark red */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styles for the popup message */
+  .success-popup p,
+  .error-popup p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  /* Styles for the close button */
+  .success-popup button,
+  .error-popup button {
+    background-color: #5cb85c; /* Green for success, red for error */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for the close button */
+  .success-popup button:hover,
+  .error-popup button:hover {
+    background-color: #4cae4c; /* Darker green for success, darker red for error */
+  }
+  

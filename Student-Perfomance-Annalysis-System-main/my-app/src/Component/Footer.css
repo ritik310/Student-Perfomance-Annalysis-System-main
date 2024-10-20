@@ -1,0 +1,18 @@
+/* Footer styling */
+footer {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+}
+
+footer .text-center {
+    padding: 10px 0 !important;
+    color: #fff !important; /* Adjust the text color as needed */
+    background-color: #007bff !important; /* Adjust the background color as needed */
+}
+
+/* Adjust padding at the bottom of the main content area */
+.main-content {
+    padding-bottom: 10px !important; /* Adjust the value based on the height of the footer */
+}
